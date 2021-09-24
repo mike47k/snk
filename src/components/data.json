@@ -1,0 +1,24 @@
+
+    [
+        {   
+            "name": "Eren",
+            "lastname":"Yager",
+            "age": "IDK",
+            "photo": "/img/eren.png",
+            "City": "IDK" 
+        },
+        {   
+            "name": "Mikasa",
+            "lastname":"Ackerman",
+            "age": "IDK",
+            "photo": "/img/mikasa.png",
+            "City": "IDK" 
+        },
+        {   
+            "name": "Armin",
+            "lastname":"IDK",
+            "age": "IDK",
+            "photo": "/img/armin.png",
+            "City": "IDK" 
+        }
+    ]

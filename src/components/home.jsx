@@ -9,22 +9,27 @@ export default class Header extends React.Component{
 
     render(){
         return (    
-                <span className="Home-Div">
-                        {this.props.chars.map((data, key) => {
+                <div className="Home-Div">
+                    <div className="Home-Figure">
+                    {this.props.chars.map((data, key) => {
                             return (
-                                <span key={key}>
+                                <div >
+                                    <figure  > 
+                                        <img src={data.photo} alt="char"/>
+                                        <figcaption>{data.name}</figcaption>
+                                    </figure>
+
+                                </div>
                                 
-                                <span className="Home-Figure"> 
-                                    <img src={data.photo} alt="char"/>
-                                    <figcaption>{data.name}</figcaption>
-                                </span>
-                                </span>
+                                
                             );
                             })
 
 
                         }
-                </span>
+                    </div>
+                        
+                </div>
         )
     }
 }

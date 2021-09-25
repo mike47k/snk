@@ -3,22 +3,36 @@
         {   
             "name": "Eren",
             "lastname":"Yager",
-            "age": "IDK",
+            "age": 15,
             "photo": "/img/eren.png",
-            "City": "IDK" 
+            "City": "Shiganshina" 
         },
         {   
             "name": "Mikasa",
             "lastname":"Ackerman",
-            "age": "IDK",
+            "age": 30,
             "photo": "/img/mikasa.png",
-            "City": "IDK" 
+            "City": "Shiganshina" 
         },
         {   
             "name": "Armin",
-            "lastname":"IDK",
-            "age": "IDK",
+            "lastname":"Arlert",
+            "age": 15,
             "photo": "/img/armin.png",
+            "City": "Shiganshina" 
+        },
+        {   
+            "name": "Levi",
+            "lastname":"Ackerman",
+            "age": 30,
+            "photo": "/img/levi.png",
+            "City": "IDK" 
+        },
+        {   
+            "name": "Hange",
+            "lastname":"Zoë",
+            "age": "IDK",
+            "photo": "/img/hanji.png",
             "City": "IDK" 
         }
     ]

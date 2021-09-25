@@ -9,19 +9,18 @@ export default class CharacterDetail extends React.Component{
             apellido: this.props.chars[0].lastname,
             edad: this.props.chars[0].age,
             foto: this.props.chars[0].photo,
-            ciudad: this.props.chars[0].city,
+            ciudad: this.props.chars[0].City,
         }
     }
     handlePeriodChange(selVal) {
         let ch = this.props.chars.forEach(element => {
-            console.log(element.name + " " + selVal);
             if (element.name === selVal) {
                 this.setState({
                     nombre: element.name,
                     apellido: element.lastname,
                     edad: element.age,
                     foto: element.photo,
-                    ciudad: element.city,
+                    ciudad: element.City,
                 })
             }
         });

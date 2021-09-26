@@ -33,7 +33,6 @@
   color: black;
 }
 .Home-Figure {
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css"
-
+import Character from './character.jsx';
 
 export default class Header extends React.Component{
     constructor(props){
@@ -13,15 +13,7 @@ export default class Header extends React.Component{
                     <div className="Home-Figure">
                     {this.props.chars.map((data, key) => {
                             return (
-                                <div >
-                                    <figure  > 
-                                        <img src={data.photo} alt="char"/>
-                                        <figcaption>{data.name}</figcaption>
-                                    </figure>
-
-                                </div>
-                                
-                                
+                                <Character data={data}/>
                             );
                             })
 

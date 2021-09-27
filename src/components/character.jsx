@@ -1,21 +1,12 @@
-import React from "react";
 import "../App.css"
 
-
-export default class Character extends React.Component{
-    constructor(props){
-        super(props)
-    }
-
-    render(){
+export default function Character(props){
         return (    
-
-                <div >
-                    <figure> 
-                        <img src={this.props.data.photo} alt="char"/>
-                        <figcaption>{this.props.data.name}</figcaption>
-                    </figure>
-                </div>                  
+            <div >
+                <figure> 
+                    <img src={props.data.photo} alt="char"/>
+                    <figcaption>{props.data.name}</figcaption>
+                </figure>
+            </div>                  
         )                        
-    }
 }

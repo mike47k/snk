@@ -40,4 +40,49 @@
             "photo": "/img/hanji.png",
             "City": "IDK" 
         }
+        ,
+        {   
+            "id":6,
+            "name": "Jean",
+            "lastname":"Kirstein",
+            "age": "IDK",
+            "photo": "/img/jean.png",
+            "City": "IDK" 
+        }
+        ,
+        {   
+            "id":7,
+            "name": "Erwin",
+            "lastname":"Smith",
+            "age": "IDK",
+            "photo": "/img/erwin.png",
+            "City": "IDK" 
+        }
+        ,
+        {   
+            "id":8,
+            "name": "Sasha",
+            "lastname":"Blouse",
+            "age": "IDK",
+            "photo": "/img/sasha.png",
+            "City": "IDK" 
+        }
+        ,
+        {   
+            "id":9,
+            "name": "Connie",
+            "lastname":"Springer",
+            "age": "IDK",
+            "photo": "/img/connie.png",
+            "City": "IDK" 
+        }
+        ,
+        {   
+            "id":10,
+            "name": "Historia",
+            "lastname":"Reis",
+            "age": "IDK",
+            "photo": "/img/historia.png",
+            "City": "IDK" 
+        }
     ]

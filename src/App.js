@@ -11,7 +11,9 @@ export default function App() {
 
   const [charactersInfo, setCharactersInfo] = useState([]);
   useEffect(()=>{
-    setCharactersInfo(Data)
+    setCharactersInfo(Data => {
+      return Data;
+    })
     console.log(charactersInfo);
   },[])
 

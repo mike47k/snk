@@ -14,7 +14,7 @@ export default class Header extends React.Component{
                     <div className="Home-Figure">
                     {this.props.chars.map((data) => {
                             return (
-                                <Link to={`/charDetail/${data.id}`} ><Character data={data}/></Link>
+                                <Character data={data}/>
                                     
                             );
                             })

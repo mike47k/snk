@@ -1,7 +1,8 @@
 import React from "react";
-import "../App.css"
 import Character from './character.jsx';
-import {Link, NavLink} from 'react-router-dom';
+import {Link, } from 'react-router-dom';
+import {Card, Container,Row} from 'react-bootstrap';
+import '../App.css';
 
 export default class Header extends React.Component{
     constructor(props){
@@ -10,8 +11,8 @@ export default class Header extends React.Component{
 
     render(){
         return (    
-                <div className="Home-Div">
-                    <div className="Home-Figure">
+                <Container fluid> 
+                    <Row className="mt-4 text-center" >
                     {this.props.chars.map((data) => {
                             return (
                                 <Character data={data}/>
@@ -21,9 +22,11 @@ export default class Header extends React.Component{
 
 
                         }
-                    </div>
+                    </Row>
+                    
+                   
                         
-                </div>
+                </Container>
         )
     }
 }

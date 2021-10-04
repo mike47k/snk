@@ -1,6 +1,6 @@
 import React, { useState , useEffect} from "react";
-import '../App.css';
 import {useParams} from 'react-router-dom';
+import {Form,Row,Container,Card,ListGroup,ListGroupItem,Col} from 'react-bootstrap';
 
 
 export default function CharacterDetail (props){
@@ -23,8 +23,8 @@ export default function CharacterDetail (props){
         if (typeof parametro.id === "string") {
             handlePeriodChange(parseInt(parametro.id));
         }else{
-            setSel( <div className= "select">
-                        <select class="select-css" onChange={(val) => handlePeriodChange(val.target.value)}>
+            setSel( <Row className="mt-4 col-2 offset-4 text-center">
+                        <Form.Select  onChange={(val) => handlePeriodChange(val.target.value)}>
                             {props.chars.map((data, key) => {
                                     return (
                                         <option key={key} 
@@ -34,8 +34,8 @@ export default function CharacterDetail (props){
                                     );
                                     })
                                 }
-                        </select>
-                    </div>);
+                        </Form.Select>
+                    </Row>);
         }
     },[parametro])
 
@@ -48,24 +48,33 @@ export default function CharacterDetail (props){
 
         return (    
             
-            <div>
+            <Container>
                 {sel}
-               <p></p>
-               <div class="container-card">
-                <div class="card">
-                <div class="card-top">
-                    <h2 class="title">{state.name} {state.lastname}</h2>
-                    <span class="subtitle">Edad: {state.age}</span>
-                </div>
+               
+        
+
+
+                <Row className="mt-4">
+                        <Col className="col-4 offset-4">
+                        <Card style={{ width: '18rem' }} >
                 
-                <div class="media-card">
-                    <img src={state.photo} alt="foto" />
-                </div>
-                <div class="bottom-card">
-                    <span class="bottom-text">Ciudad: {state.City}</span>
-                </div> 
-                </div> 
-                </div>
-           </div>
+                <Card.Body>
+                    <Card.Title className="text-center">{state.name} {state.lastname}</Card.Title>
+                    <Card.Img variant="top" src={state.photo}  />
+                    <Card.Text>Edad: {state.age}
+                    </Card.Text>
+                </Card.Body>
+                <ListGroup className="list-group-flush">
+                    <ListGroupItem>Ciudad: {state.City}</ListGroupItem>
+
+                </ListGroup>
+                </Card>
+                        </Col>
+                
+                </Row>
+                
+
+
+           </Container>
         )
 }

@@ -6,6 +6,9 @@ import About from './components/about.jsx';
 import CharacterDetail from './components/characterDetail.jsx';
 import {useEffect, useState} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 export default function App() {
 

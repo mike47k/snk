@@ -3,7 +3,7 @@ import {Card, Col, Row} from 'react-bootstrap';
 
 export default function Character(props){
         return (    
-                <Col className="col-3"> 
+                <Col className="col-3 mb-2"> 
                     <Card  style={{ width: '18rem' }} className="text-center">
                 <Card.Img variant="top" src={props.data.photo} />
                 <Card.Body>

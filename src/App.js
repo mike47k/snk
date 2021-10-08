@@ -1,23 +1,21 @@
 import './App.css';
+import {useEffect, useState} from 'react';
 import Data from './components/data.json';
 import NavBar from './components/navBar.jsx';
 import Home from './components/home.jsx';
 import About from './components/about.jsx';
 import CharacterDetail from './components/characterDetail.jsx';
-import {useEffect, useState} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 export default function App() {
-
-  const [charactersInfo, setCharactersInfo] = useState([]);
+  const [charactersInfo, setCharactersInfo] = useState(Data);
   useEffect(()=>{
-    setCharactersInfo(Data => {
-      return Data;
-    })
-    console.log(charactersInfo);
+    setCharactersInfo(Data);
+    // no setea
+    
   },[])
 
   return (
@@ -32,13 +30,13 @@ export default function App() {
             <About/>
           </Route>
           <Route exact path="/charDetail">
-            <CharacterDetail chars={Data}/>
+            <CharacterDetail chars={charactersInfo}/>
           </Route>
           <Route exact path="/charDetail/:id">
-            <CharacterDetail chars={Data}/>
+            <CharacterDetail chars={charactersInfo}/>
           </Route>
           <Route exact path="/">
-            <Home chars={Data}/>
+            <Home chars={charactersInfo}/>
           </Route>
         </Switch>
     </div>
